@@ -16,3 +16,10 @@ cliente.enderecos = [
   },
 ];
 
+const chavesDoObjeto = Object.keys(cliente);
+
+console.log(chavesDoObjeto)
+
+if(!chavesDoObjeto.includes("enderecos")) {
+    console.log("Erro! É necessário ter um endereço cadastrado.")
+}
